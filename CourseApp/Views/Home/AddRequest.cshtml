@@ -1,0 +1,26 @@
+﻿@model CourseApp.Models.Request
+@{
+    ViewData["Title"] = "AddRequest";
+}
+
+<div class="bg-success text-white m-5 p-4">Create a Request</div>
+<form asp-action="AddRequest" method="post" class="m-5">
+    <div class="from-group">
+        <label>Name</label>
+        <input value="" class="form-control" asp-for="Name" />
+    </div>
+    <div class="from-group">
+        <label>Email</label>
+        <input value="" class="form-control"asp-for="Email" />
+    </div>
+    <div class="from-group">
+        <label>Phone</label>
+        <input value="" class="form-control" asp-for="Phone"/>
+    </div>
+    <div class="from-group">
+        <label>Message</label>
+        <input value="" class="form-control" asp-for="Message"/>
+    </div>
+    <button type="submit"class="btn btn-primary">Submit</button>
+</form>
+
